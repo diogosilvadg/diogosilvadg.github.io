@@ -23,22 +23,23 @@ html,
 body {
     margin: 0;
     padding: 0;
-
-    background: #000000;
-    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    background: white;
+    overflow: hidden;
 }
 
-.output {
-    margin: 0;
-    padding: 12px;
+.graphic {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    font-family: Arial, sans-serif;
-    font-size: 14pt;
-
-    color: #FFFFFF;
-    background: #000000;
-
-    white-space: pre-wrap;
+.graphic svg {
+    width: 100%;
+    height: 100%;
 }
 
 </style>
@@ -47,7 +48,16 @@ body {
 
 <body>
 
-<div class="output">Ben the Best
+<div class="graphic">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="730" viewBox="0 0 640 730">
+<rect width="100%" height="100%" fill="white"/>
+<polyline points="320.0,365.0 470.0,365.0" fill="none" stroke="blue" stroke-width="6.0" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="470.0,365.0 470.0,215.0" fill="none" stroke="red" stroke-width="6.0" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="470.0,215.0 320.0,214.99999999999997" fill="none" stroke="green" stroke-width="6.0" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="320.0,214.99999999999997 320.0,365.0" fill="none" stroke="orange" stroke-width="6.0" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="320.0,365.0 320.0,365.0" fill="none" stroke="black" stroke-width="6.0" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="336.0,365.0 334.0,367.0 330.0,366.0 327.0,369.0 328.99999999999994,372.0 327.99999999999994,374.0 324.99999999999994,371.0 320.99999999999994,372.0 316.99999999999994,369.99999999999994 313.99999999999994,372.99999999999994 311.99999999999994,370.99999999999994 315.0,368.99999999999994 313.0,364.99999999999994 315.0,360.99999999999994 312.0,358.99999999999994 314.0,356.99999999999994 317.0,359.99999999999994 321.0,358.0 325.0,359.0 328.0,356.0 329.0,358.0 327.0,361.0 330.0,364.0 334.0,363.0" fill="orange" stroke="orange" stroke-width="1.0"/>
+</svg>
 </div>
 
 </body>
